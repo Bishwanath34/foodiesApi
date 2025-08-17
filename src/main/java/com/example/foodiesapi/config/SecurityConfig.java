@@ -49,7 +49,7 @@ return new BCryptPasswordEncoder();
 
     private UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config=new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:5174"));
+        config.setAllowedOrigins(List.of("https://foodiesfront2.onrender.com","https://foodiesfront.onrender.com"));
         config.setAllowedMethods(List.of("GET","PUT","POST","DELETE","OPTIONS","PATCH"));
         config.setAllowedHeaders(List.of("Authorization","Content-Type"));
         config.setAllowCredentials(true);
